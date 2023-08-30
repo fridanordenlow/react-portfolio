@@ -21,13 +21,16 @@ const Introduction = () => {
           </p>
         </div>
         <div className="contact-me">
-          <a hrefLang="en-US" className="icon" title="link to Fanny's Linked In page" href="https://www.linkedin.com/in/fanny-stenberg/" target="_blank" rel="noreferrer">
+          <a hrefLang="en-US" className="icon" title="Link to Frida's Linked In page" href="https://www.linkedin.com/in/fridanordenlow/" target="_blank" rel="noreferrer">
             <i aria-hidden="true" className="fab fa-linkedin-in" />
           </a>
-          <a hrefLang="en-US" className="icon" title="link to Fanny's Github page" href="https://github.com/fannystenberg" target="_blank" rel="noreferrer">
+          <a hrefLang="en-US" className="icon" title="Link to Frida's Github page" href="https://github.com/fridanordenlow" target="_blank" rel="noreferrer">
             <i aria-hidden="true" className="fab fa-github" />
           </a>
-          <a hrefLang="en-US" className="icon" title="link to Fanny's mail" href="mailto:ffannystenberg@gmail.com" target="_blank" rel="noreferrer">
+          {/* <a className="icon" href="https://www.instagram.com/fridanordenlow/?hl=sv" aria-label="Link to Fridas Instagram page">
+            <i aria-hidden="true" className="fa-brands fa-instagram" />
+          </a> */}
+          <a hrefLang="en-US" className="icon" title="Link to send an email to Frida" href="mailto:frida.nordenlow@hotmail.com" target="_blank" rel="noreferrer">
             <i aria-hidden="true" className="fa-solid fa-envelope" />
           </a>
         </div>
