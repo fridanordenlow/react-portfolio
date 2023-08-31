@@ -6,7 +6,7 @@ import SingleProject from './SingleProject.js';
 const FeaturedProjectsList = () => {
   return (
     <Section lang="en-US" title="List of Frida's featured projects">
-      <SectionHeader lang="en">Featured Projects</SectionHeader>
+      <Header lang="en">Featured Projects</Header>
       {ProjectData.map((project) => {
         return (
           <SingleProject
@@ -15,7 +15,7 @@ const FeaturedProjectsList = () => {
             title={project.title}
             description={project.description}
             languages={project.techLanguages.map(
-              (language) => <Language key={language}>{language}</Language>
+              (language) => <TechLanguages key={language}>{language}</TechLanguages>
             )}
             githubLink={project.githubLink}
             deployedLink={project.netlifyLink} />
@@ -38,8 +38,8 @@ export const Section = styled.section`
   }
 `;
 
-export const SectionHeader = styled.h2`
-  font-family: 'Satoshi-Variable';
+export const Header = styled.h2`
+  font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -48,7 +48,7 @@ export const SectionHeader = styled.h2`
   margin: 24px 24px 24px 0;
 `;
 
-export const Language = styled.li`
+export const TechLanguages = styled.li`
   display: inline;
   padding: 3px;
   margin: 0 2px;

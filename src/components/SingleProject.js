@@ -39,7 +39,7 @@ const SingleProject = (
 };
 export default SingleProject;
 
-export const ProjectWrapper = styled.article`
+const ProjectWrapper = styled.article`
   margin-top: 24px;
 
   @media (min-width: 667px) and (max-width: 1024px) {
@@ -55,11 +55,11 @@ export const ProjectWrapper = styled.article`
   }
 `;
 
-export const ImageWrapper = styled.div`
+const ImageWrapper = styled.div`
   margin: 24px 24px 24px 0;
 `;
 
-export const ProjectImage = styled.img`
+const ProjectImage = styled.img`
   @media (min-width: 667px) and (max-width: 1024px) {
     width: 184px;
     height: 280px;
@@ -67,10 +67,10 @@ export const ProjectImage = styled.img`
   }
 `;
 
-export const ProjectInfo = styled.div``;
+const ProjectInfo = styled.div``;
 
-export const ProjectTitle = styled.h3`
-  font-family: 'Satoshi-Variable';
+const ProjectTitle = styled.h3`
+  font-family: 'Satoshi';
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -78,7 +78,7 @@ export const ProjectTitle = styled.h3`
   color: #000000;
 `;
 
-export const ProjectDescription = styled.p`
+const ProjectDescription = styled.p`
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
@@ -93,9 +93,9 @@ export const ProjectDescription = styled.p`
   }
 `;
 
-export const ProjectLanguages = styled.ul``;
+const ProjectLanguages = styled.ul``;
 
-export const Button = styled.button`
+const Button = styled.button`
   display: block;
   margin: 12px 0px 12px 0;
   background-color: #F5F5F5;
