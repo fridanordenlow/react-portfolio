@@ -38,6 +38,7 @@ export const Section = styled.section`
   @media (min-width: 1024px) {
     width: 820px;
     margin: 0 auto;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
