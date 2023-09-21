@@ -6,10 +6,10 @@ const Tech = () => {
   return (
     <TechWrapper>
       <Header>
-        <h1>Tech</h1>
+        Tech
       </Header>
       <TechParagraph>
-          HTML, CSS, <SpanRed>JavaScript,</SpanRed> ES6, JSX, <SpanGreen>React,</SpanGreen> React Hooks, Styled Components, Redux, Node.js, Mongo DB, Web Accessibly, API:s, <SpanBlue>mob-programming,</SpanBlue> pair-programming, Github.
+          HTML, CSS, <SpanRed>JavaScript ES6,</SpanRed> JSX, <SpanGreen>React,</SpanGreen> React Hooks, Styled Components, Redux, Node.js, Mongo DB, Web Accessibly, API:s, <SpanBlue>mob-programming,</SpanBlue> pair-programming, Github.
       </TechParagraph>
     </TechWrapper>
   )
@@ -35,7 +35,6 @@ const TechWrapper = styled.div`
 
 const Header = styled.h1`
     align-self: center;
-    font-family: 'Satoshi';
     font-size: 80px;
     font-weight: 700;
     color: #0B24F5;
