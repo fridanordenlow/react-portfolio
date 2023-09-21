@@ -11,10 +11,10 @@ const FeaturedProjectsList = () => {
         return (
           <SingleProject
             key={project.img}
-            imgSrc={project.img}
+            img={project.img}
             title={project.title}
             description={project.description}
-            languages={project.techLanguages.map(
+            techLanguages={project.techLanguages.map(
               (language) => <TechLanguages key={language}>{language}</TechLanguages>
             )}
             githubLink={project.githubLink}
@@ -28,9 +28,16 @@ const FeaturedProjectsList = () => {
 export default FeaturedProjectsList;
 
 export const Section = styled.section`
-  margin-left: 24px;
+  margin: 60px 24px 0px 24px;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    padding: 0px 24px 0px 24px;
+    margin-top: 120px;
+  }
 
   @media (min-width: 1024px) {
+    width: 820px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,11 +57,11 @@ export const Header = styled.h2`
 
 export const TechLanguages = styled.li`
   display: inline;
-  padding: 3px;
-  margin: 0 2px;
-  background-color: #000000;
-  color: #ffff;
-  font-family: 'Satoshi-Variable';
+  padding: 2px 6px 2px 6px;
+  margin-right: 5px;
+  background-color: black;
+  color: white;
+  font-family: 'Satoshi';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
