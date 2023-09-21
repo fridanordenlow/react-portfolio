@@ -28,17 +28,19 @@ const FeaturedProjectsList = () => {
 export default FeaturedProjectsList;
 
 export const Section = styled.section`
-  margin: 60px 24px 0px 24px;
+  margin: 60px 24px 60px 24px;
 
   @media (min-width: 667px) and (max-width: 1024px) {
     padding: 0px 24px 0px 24px;
     margin-top: 120px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: 1024px) {
     width: 820px;
     margin: 0 auto;
     margin-top: 120px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;

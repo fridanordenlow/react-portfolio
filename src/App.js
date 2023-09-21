@@ -1,3 +1,4 @@
+import Contact from 'components/Contact'
 import FeaturedProjectsList from 'components/FeaturedProjectsList'
 import Introduction from 'components/Introduction'
 import Skills from 'components/Skills'
@@ -11,6 +12,7 @@ export const App = () => {
       <Tech />
       <FeaturedProjectsList />
       <Skills />
+      <Contact />
     </div>
   )
 }

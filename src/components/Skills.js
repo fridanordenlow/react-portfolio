@@ -72,7 +72,7 @@ const Header = styled.h1`
 const ListsWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    column-gap: 70px;
     font-size: 22px;
     line-height: 30px;
     font-family: 'EB Garamond';
