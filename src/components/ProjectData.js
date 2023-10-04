@@ -5,9 +5,18 @@ import SpotifyPhone from 'images/spotify-phone.jpg'
 const ProjectData = [
   {
     // img: `${}`,
+    title: 'To Do Web App',
+    description: 'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
+    techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
+    githubLink: 'project-todos',
+    deployedLink: 'to-do-list-by-frida'
+    // https://to-do-list-by-frida.netlify.app/
+  },
+  {
+    // img: `${}`,
     title: 'Movie Page',
     description: 'In this project I worked with two Technigo teammates to make a movie site that collected data from an API. We learned how to work and implement new React hooks and functions to enable us to create and navigate to multiple pages.',
-    techLanguages: ['React', 'JSX', 'Javascript ES6', 'HTML5', 'CSS3'],
+    techLanguages: ['React', 'JSX', 'Javascript ES6', 'CSS3'],
     githubLink: 'project-movies',
     deployedLink: 'cosmic-daffodil-7c032f'
     // https://cosmic-daffodil-7c032f.netlify.app/
