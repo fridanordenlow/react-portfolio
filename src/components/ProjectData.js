@@ -5,7 +5,16 @@ import SpotifyPhone from 'images/spotify-phone.jpg'
 const ProjectData = [
   {
     // img: `${}`,
-    title: 'To Do Web App',
+    title: 'Oldschool Labyrinth Game',
+    description: '',
+    techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
+    githubLink: 'project-labyrinth',
+    deployedLink: 'reliable-sorbet-d720d3'
+    // https://reliable-sorbet-d720d3.netlify.app/?
+  },
+  {
+    // img: `${}`,
+    title: 'To Do List Web App',
     description: 'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
     githubLink: 'project-todos',
