@@ -223,8 +223,10 @@ const TextileImage = styled.img`
 
         @media (min-width: 667px) and (max-width: 1024px) {
             display: flex;
-            object-fit: cover;
-            align-self: center;
+            // flex-direction: row;
+            // object-fit: cover;
+            // align-self: center;
+            // width: 40%;
         }
         @media (min-width: 1024px) {
             display: flex;

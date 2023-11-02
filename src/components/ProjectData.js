@@ -2,10 +2,13 @@
 import BeautifulSky from 'images/beautiful-sky.jpg'
 import SpotifyPhone from 'images/spotify-phone.jpg'
 import WeatherForecast from 'images/weather-app.png'
+import MovieFeed from 'images/movie-page.png'
+import ToDoList from 'images/to-do-list.png'
+import LabyrinthGame from 'images/labyrinth-mockup.png'
 
 const ProjectData = [
   {
-    // img: `${}`,
+    img: `${LabyrinthGame}`,
     title: 'Oldschool Labyrinth Game',
     description: '',
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
@@ -14,7 +17,7 @@ const ProjectData = [
     // https://reliable-sorbet-d720d3.netlify.app/?
   },
   {
-    // img: `${}`,
+    img: `${ToDoList}`,
     title: 'To Do List Web App',
     description: 'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
@@ -23,7 +26,7 @@ const ProjectData = [
     // https://to-do-list-by-frida.netlify.app/
   },
   {
-    // img: `${}`,
+    img: `${MovieFeed}`,
     title: 'Movie Page',
     description: 'In this project I worked with two Technigo teammates to make a movie site that collected data from an API. We learned how to work and implement new React hooks and functions to enable us to create and navigate to multiple pages.',
     techLanguages: ['React', 'JSX', 'Javascript ES6', 'CSS3'],
