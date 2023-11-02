@@ -5,7 +5,7 @@ import ProfileImg from 'images/linkedin-pic-cropped.jpg'
 const Contact = () => {
   return (
     <ContactWrapper>
-      <Header>Time to talk</Header>
+      <Header>Contact</Header>
       <ImgAndTitlesContainer>
         <ProfileImage src={ProfileImg} alt="Profile image of Frida" />
         <Titles>
@@ -49,14 +49,15 @@ const ContactWrapper = styled.div`
     //}
 `
 const Header = styled.div`
-    color: #EB5577;
+    // color: #EB5577;
+    color: #112233;
     font-weight: 900;
     font-size: 55px;
     line-height: 78px;
     margin: 64px 0px 56px 0px;
 
     @media (min-width: 667px) {
-        font-size: 105px;
+        font-size: 85px;
         margin-top: 196px;
   }
 `

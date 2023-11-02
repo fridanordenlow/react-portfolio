@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import ProfileImg from 'images/linkedin-pic-cropped.jpg'
+import DuvetImg from 'images/duvet-1.jpg'
 import styled from 'styled-components';
 
 const Introduction = () => {
@@ -44,7 +45,8 @@ const Introduction = () => {
           </ContactContainer>
         </PresentationContent>
       </PresentationContainer>
-      <QuoteContainer>
+      <TextileImage src={DuvetImg} alt="Close-up image of textile duvet art piece" />
+      {/* <QuoteContainer>
         <QuoteText>
         You might not think that programmers are artists, but programming is an
         extremely creative profession. It&apos;s logic-based creativity.
@@ -52,7 +54,7 @@ const Introduction = () => {
           <br />
         - John Romero
         </QuoteText>
-      </QuoteContainer>
+      </QuoteContainer> */}
     </IntroductionContainer>
   )
 };
@@ -152,7 +154,9 @@ const Titles = styled.div`
 const MyName = styled.h3`
     font-size: 28px;
     font-weight: 700;
-    color: #0B24F5;
+    color: #FCC8D1;
+    // color: #F78CA2; ganska bra rosa
+    // color: #0B24F5;
 `
 
 const FirstProfession = styled.h2`
@@ -207,6 +211,21 @@ const Icon = styled.a`
   }
 `
 
+const TextileImage = styled.img`
+    display: none;
+
+        @media (min-width: 667px) and (max-width: 1024px) {
+            display: flex;
+            object-fit: cover;
+            align-self: center;
+        }
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            // width: 50%;
+        }
+`
+/*
 const QuoteContainer = styled.div`
     display: none;
 
@@ -222,9 +241,9 @@ const QuoteContainer = styled.div`
         background: #FCEDEA;
         width: 50%;
     }
-`
+` */
 
-const QuoteText = styled.p`
+/* const QuoteText = styled.p`
     font-family: 'EB Garamond';
     font-style: italic;
     font-size: 22px;
@@ -249,4 +268,4 @@ const QuoteText = styled.p`
         line-height: 40px;
         width: 60%;
     }
-`
+` */
