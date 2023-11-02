@@ -1,6 +1,7 @@
 // import Artsie from 'images/Artsie.png';
 import BeautifulSky from 'images/beautiful-sky.jpg'
 import SpotifyPhone from 'images/spotify-phone.jpg'
+import WeatherForecast from 'images/weather-app.png'
 
 const ProjectData = [
   {
@@ -54,7 +55,7 @@ const ProjectData = [
     // deployedLink: 'https://music-releases-by-frida-and-fiona.netlify.app'
   },
   {
-    // img:
+    img: `${WeatherForecast}`,
     title: 'Weather App',
     description: 'This weather site shows the current weather and a five day forecast in the chosen city by pulling data from the Open Weather API. to update the current and 5-day forecast. It changes color and weather icons based on the current conditions.',
     techLanguages: ['Javascript ES6', 'HTML5', 'CSS3'],

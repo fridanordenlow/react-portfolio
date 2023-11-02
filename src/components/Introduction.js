@@ -154,14 +154,21 @@ const Titles = styled.div`
 const MyName = styled.h3`
     font-size: 28px;
     font-weight: 700;
-    color: #FCC8D1;
-    // color: #F78CA2; ganska bra rosa
+    color: #86B8D7; // jättebäst
+    // color: #8BC0E1; bäst
+    // color: #90CDEB; bättre
+    // color: #9FD1EA; bra
+    // color: #9CC9E0;
+    // color: #95C1D7;
+    margin-bottom: 5px;
+    // color: #E58CA1; bra mellanrosa
     // color: #0B24F5;
 `
 
 const FirstProfession = styled.h2`
     font-size: 32px;
     font-weight: 900;
+    margin-bottom: 5px;
 `
 
 const SecondProfession = styled.h4`
