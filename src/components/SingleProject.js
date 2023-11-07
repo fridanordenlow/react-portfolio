@@ -8,6 +8,8 @@ import LiveDemoHover from 'icons/Live-Demo-Button-Hover.svg'
 const SingleProject = (
   { img, title, description, techLanguages, githubLink, deployedLink }
 ) => {
+  console.log(title)
+  console.log(deployedLink)
   return (
     <ProjectWrapper lang="en-US">
       <ImageWrapper aria-hidden="true">

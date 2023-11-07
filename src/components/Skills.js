@@ -44,7 +44,8 @@ const Skills = () => {
 export default Skills;
 
 const SkillsWrapper = styled.div`
-    background: #FDF2E4;
+    // background: #FDF2E4;
+    background: #a2bfb1;
     // height: 910px;
     display: flex;
     flex-direction: column;

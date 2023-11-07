@@ -158,11 +158,8 @@ const MyName = styled.h3`
     // color: #8BC0E1; bäst
     // color: #90CDEB; bättre
     // color: #9FD1EA; bra
-    // color: #9CC9E0;
-    // color: #95C1D7;
     margin-bottom: 5px;
     // color: #E58CA1; bra mellanrosa
-    // color: #0B24F5;
 `
 
 const FirstProfession = styled.h2`
@@ -194,7 +191,7 @@ const ContactContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     /*align-items: flex-end;*/
-    width: 340px;
+    width: 240px;
     padding: 0px;
     margin: 40px 0px 0px 0px;
 
@@ -214,7 +211,8 @@ const Icon = styled.a`
     margin-right: 34px;
 
     &:hover {
-        color: black;
+        // color: black;
+        color: #E58CA1;
   }
 `
 

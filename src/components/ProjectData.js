@@ -14,7 +14,7 @@ const ProjectData = [
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
     githubLink: 'project-labyrinth',
     deployedLink: 'reliable-sorbet-d720d3'
-    // https://reliable-sorbet-d720d3.netlify.app/?
+    // deployedLink: 'https://reliable-sorbet-d720d3.netlify.app/?'
   },
   {
     img: `${ToDoList}`,
