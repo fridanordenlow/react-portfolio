@@ -54,7 +54,9 @@ export const Header = styled.h2`
   font-weight: 700;
   font-size: 72px;
   line-height: 80px;
-  color: #0B24F5;
+  color: #a2bfb1;
+  // color: #EDB6BB;
+  // color: #0B24F5;
   margin: 24px 24px 24px 0;
 `;
 

@@ -38,7 +38,8 @@ const Header = styled.h1`
     align-self: center;
     font-size: 80px;
     font-weight: 700;
-    color: #0B24F5;
+    color: #E58CA1;
+    // color: #0B24F5;
 `
 const TechParagraph = styled.p`
     font-family: 'EB Garamond';

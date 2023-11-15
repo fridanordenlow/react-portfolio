@@ -18,7 +18,7 @@ const Introduction = () => {
               <Titles>
                 <MyName>Frida Nordenlöw</MyName>
                 <FirstProfession>Frontend Developer</FirstProfession>
-                <SecondProfession>+ visual artist</SecondProfession>
+                <SecondProfession>+ textile artist</SecondProfession>
               </Titles>
             </ImgAndTitlesContainer>
           </ImgAndTitlesContainer>

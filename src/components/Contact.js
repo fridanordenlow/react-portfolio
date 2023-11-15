@@ -43,6 +43,8 @@ const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0px 24px 0px 24px;
+    background: #F3DDDF;
+    // background: #e5c0c3;
 
     //@media (min-width: 667px) {
     //    align-items: center;
@@ -96,7 +98,8 @@ const Titles = styled.div`
 const MyName = styled.h3`
     font-size: 28px;
     font-weight: 700;
-    color: #0B24F5;
+    color: black;
+    // color: #0B24F5;
 `
 
 const FirstProfession = styled.h2`

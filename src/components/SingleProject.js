@@ -9,7 +9,8 @@ const SingleProject = (
   { img, title, description, techLanguages, githubLink, deployedLink }
 ) => {
   console.log(title)
-  console.log(deployedLink)
+  console.log(description)
+  console.log(deployedLink) // this is for some reason undefined in the console
   return (
     <ProjectWrapper lang="en-US">
       <ImageWrapper aria-hidden="true">
