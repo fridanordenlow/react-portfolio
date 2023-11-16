@@ -18,7 +18,7 @@ const FeaturedProjectsList = () => {
               (language) => <TechLanguages key={language}>{language}</TechLanguages>
             )}
             githubLink={project.githubLink}
-            deployedLink={project.netlifyLink} />
+            deployedLink={project.deployedLink} />
         )
       })}
     </Section>

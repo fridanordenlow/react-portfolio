@@ -9,6 +9,7 @@ import LabyrinthGame from 'images/labyrinth-mockup.png'
 const ProjectData = [
   {
     img: `${LabyrinthGame}`,
+    netlify: 'reliable-sorbet-d720d3',
     title: 'Oldschool Labyrinth Game',
     description: '',
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],

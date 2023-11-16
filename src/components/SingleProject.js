@@ -10,7 +10,7 @@ const SingleProject = (
 ) => {
   console.log(title)
   console.log(description)
-  console.log(deployedLink) // this is for some reason undefined in the console
+  console.log(deployedLink)
   return (
     <ProjectWrapper lang="en-US">
       <ImageWrapper aria-hidden="true">
