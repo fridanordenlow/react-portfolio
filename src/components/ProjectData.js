@@ -5,13 +5,15 @@ import WeatherForecast from 'images/weather-app.png'
 import MovieFeed from 'images/movie-page.png'
 import ToDoList from 'images/to-do-list.png'
 import LabyrinthGame from 'images/labyrinth-mockup.png'
+import GuessWho from 'images/guess_who_game.png'
+import ChatBot from 'images/chat_bot.png'
 
 const ProjectData = [
   {
     img: `${LabyrinthGame}`,
     netlify: 'reliable-sorbet-d720d3',
-    title: 'Oldschool Labyrinth Game',
-    description: '',
+    title: 'Old School Labyrinth Game',
+    description: 'A little labyrinth game built in React where we worked with storing the current state of the game using thunks and async actions in Redux. A very fun group project We flirted with some coding elements in the design.',
     techLanguages: ['Redux', 'React', 'JSX', 'Javascript ES6', 'CSS3'],
     githubLink: 'project-labyrinth',
     deployedLink: 'reliable-sorbet-d720d3'
@@ -45,8 +47,6 @@ const ProjectData = [
     deployedLink: 'the-dream-survey'
     // githubLink: 'https://github.com/fridanordenlow/project-survey',
     // deployedLink: 'https://the-dream-survey.netlify.app'
-    // githubLink: 'project-redux-quiz',
-    // netlifyLink: 'neon-souffle-d2a8b2'
   },
   {
     img: `${SpotifyPhone}`,
@@ -69,7 +69,7 @@ const ProjectData = [
     // deployedLink: 'https://voluble-bonbon-854851.netlify.app'
   },
   {
-    // img:
+    img: `${GuessWho}`,
     title: 'Guess Who? The Game',
     description: 'This is a digital version of the classic board game "Guess Who?". It uses conditional statements, array methods and many more Javascript features to filter characters based on the players questions and finally lets you know if you have made the right guess or not!',
     techLanguages: ['Javascript ES6', 'HTML5', 'CSS3'],
@@ -79,7 +79,7 @@ const ProjectData = [
     // deployedLink: 'https://guess-who-game-by-frida.netlify.app/'
   },
   {
-    // img:
+    img: `${ChatBot}`,
     title: 'Chat Bot',
     description: 'The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries. ',
     techLanguages: ['Javascript ES6', 'HTML5', 'CSS3'],

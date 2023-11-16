@@ -43,7 +43,8 @@ const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0px 24px 0px 24px;
-    background: #F3DDDF;
+    background: #AAC5B5;
+    // background: #F3DDDF; light pink
     // background: #e5c0c3;
 
     //@media (min-width: 667px) {
@@ -52,7 +53,7 @@ const ContactWrapper = styled.div`
 `
 const Header = styled.div`
     // color: #EB5577;
-    color: #112233;
+    color: black;
     font-weight: 900;
     font-size: 55px;
     line-height: 78px;
@@ -60,7 +61,7 @@ const Header = styled.div`
 
     @media (min-width: 667px) {
         font-size: 85px;
-        margin-top: 196px;
+        margin-top: 168px;
   }
 `
 
@@ -71,7 +72,7 @@ const ImgAndTitlesContainer = styled.div`
 
     @media (min-width: 667px) {
         flex-direction: row;
-        margin-top: 75px;
+       // margin-top: 75px;
     }
 `
 const ProfileImage = styled.img`
@@ -127,7 +128,7 @@ const ContactInfo = styled.div`
         justify-content: center;
         font-size: 32px;
         line-height: 43px;
-        margin: 120px 0px 175px 0px;
+        margin: 80px 0px 80px 0px;
     }
 `
 
@@ -146,11 +147,14 @@ const IconsContainer = styled.div`
 `
 
 const Icon = styled.a`
-    color: #D0D0D0;
+    color: black;
     font-size: 26px;
     // margin-right: 34px;
 
     &:hover {
-        color: black;
+        color: #D0D0D0;
   }
+  @media (min-width: 667px) {
+    font-size: 30px;  
+    }
 `

@@ -21,21 +21,23 @@ const Skills = () => {
         <ToolBox>
           <li><span>Toolbox</span></li>
           <li>Visual Studio Code</li>
-          <li>Figma</li>
           <li>Postman</li>
           <li>MongoDB</li>
           <li>Github</li>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>InDesign</li>
         </ToolBox>
         <More>
           <li><span>More</span></li>
+          <li>Mob/Pair Programming</li>
+          <li>Agile Methodology</li>
           <li>Visual Design</li>
-          <li>Photoshop</li>
-          <li>InDesign</li>
         </More>
-        <Upcoming>
+        {/* <Upcoming>
           <li><span>Upcoming</span></li>
           <li>Typescript.js</li>
-        </Upcoming>
+        </Upcoming> */}
       </ListsWrapper>
     </SkillsWrapper>
   )
@@ -65,7 +67,8 @@ const Header = styled.h1`
     align-self: center;
     font-size: 80px;
     font-weight: 700;
-    color: #0B24F5;
+    color: #EDA7B7;
+    // color: #0B24F5;
 
     @media (min-width: 667px) {
        
@@ -112,7 +115,8 @@ const ToolBox = styled.div`
     span {
         display: flex; 
         font-family: 'Satoshi', sans-serif;
-        background: #2483E0;
+        background: #61A0DF;
+        // background: #2483E0;
         color: #FFFFFF;
         // width: 99px;
         // height: 36px;
@@ -133,7 +137,8 @@ const More = styled.div`
     span {
         display: flex; 
         font-family: 'Satoshi', sans-serif;
-        background: #0B24F5;
+        background: #92BCA3;
+        // background: #0B24F5;
         color: #FFFFFF;
         // width: 71px;
         // height: 36px;
@@ -146,13 +151,13 @@ const More = styled.div`
     }
 `
 
-const Upcoming = styled.div`
+/* const Upcoming = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     span {
-        display: flex; 
+        display: flex;
         font-family: 'Satoshi', sans-serif;
         background: #6DB486;
         color: #FFFFFF;
@@ -165,4 +170,4 @@ const Upcoming = styled.div`
         margin-bottom: 16px;
         padding: 2px 5px 2px 5px;
     }
-`
+` */
