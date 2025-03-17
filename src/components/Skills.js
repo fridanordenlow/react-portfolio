@@ -12,18 +12,22 @@ const Skills = () => {
           <li><span>Code</span></li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>JavaScript ES6</li>
+          <li>JavaScript (ES6+)</li>
+          <li>TypeScript</li>
           <li>React</li>
-          <li>Styled Components</li>
+          <li>Vue.js</li>
           <li>Redux</li>
+          <li>Pinia</li>
+          <li>Styled Components</li>
           <li>Node.js</li>
         </Code>
         <ToolBox>
           <li><span>Toolbox</span></li>
           <li>Visual Studio Code</li>
+          <li>Git & GitHub</li>
+          <li>Vite</li>
           <li>Postman</li>
           <li>MongoDB</li>
-          <li>Github</li>
           <li>Figma</li>
           <li>Photoshop</li>
           <li>InDesign</li>
@@ -33,6 +37,9 @@ const Skills = () => {
           <li>Mob/Pair Programming</li>
           <li>Agile Methodology</li>
           <li>Visual Design</li>
+          <li>UI/UX Design Principles</li>
+          <li>RESTful API&apos;s & Fetch</li>
+          <li>Web Accessibilty (a11y)</li>
         </More>
         {/* <Upcoming>
           <li><span>Upcoming</span></li>
@@ -56,7 +63,7 @@ const SkillsWrapper = styled.div`
     justify-content: center;
     list-style: none;
     text-align: center;
-    padding: 94px 24px 137px 24px;
+    padding: 94px 24px 94px 24px;
 
     @media (min-width: 667px) {
         
