@@ -16,7 +16,7 @@ const Contact = () => {
       </ImgAndTitlesContainer>
       <ContactInfo>
         <p>+46(0) 735 76 64 12</p>
-        <p>contact@fridanordenlow.se</p>
+        <p>frida.nordenlow@medieinstitutet.se</p>
       </ContactInfo>
       <IconsContainer>
         <Icon hrefLang="en-US" title="Link to Frida's Linked In page" href="https://www.linkedin.com/in/fridanordenlow/" target="_blank" rel="noreferrer">
@@ -28,7 +28,7 @@ const Contact = () => {
         {/* <Icon href="https://www.instagram.com/fridanordenlow/?hl=sv" aria-label="Link to Fridas Instagram page">
             <i aria-hidden="true" className="fa-brands fa-instagram" />
           </Icon> */}
-        <Icon hrefLang="en-US" title="Link to send an email to Frida" href="mailto:frida.nordenlow@hotmail.com" target="_blank" rel="noreferrer">
+        <Icon hrefLang="en-US" title="Link to send an email to Frida" href="mailto:frida.nordenlow@medieinstitutet.se" target="_blank" rel="noreferrer">
           <i aria-hidden="true" className="fa-solid fa-envelope" />
         </Icon>
       </IconsContainer>
