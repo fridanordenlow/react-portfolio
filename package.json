@@ -17,9 +17,9 @@
     "styled-components": "^6.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint ."
   },
@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint-plugin-flowtype": "^8.0.3",
     "react-scripts": "5.0.1"
   }
