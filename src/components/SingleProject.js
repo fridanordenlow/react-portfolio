@@ -33,7 +33,8 @@ const SingleProject = (
           lang="en"
           type="button"
           title="Link to deployed project on Netlify"
-          onClick={() => window.open(`https://${deployedLink}.netlify.app/`)} />
+          // onClick={() => window.open(`https://${deployedLink}.netlify.app/`)}
+          onClick={() => window.open(`${deployedLink}`)} />
       </ProjectInfo>
     </ProjectWrapper>
   )
