@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import ProfileImg from 'images/linkedin-pic-cropped.jpg'
+// import ProfileImg from 'images/profile-pic_new.webp'
 import DuvetImg from 'images/duvet-1.jpg'
 import styled from 'styled-components';
 
@@ -18,7 +19,7 @@ const Introduction = () => {
               <Titles>
                 <MyName>Frida Nordenlöw</MyName>
                 <FirstProfession>Frontend Developer</FirstProfession>
-                <SecondProfession>+ textile artist</SecondProfession>
+                <SecondProfession>+ visual & textile artist</SecondProfession>
               </Titles>
             </ImgAndTitlesContainer>
           </ImgAndTitlesContainer>
@@ -111,7 +112,8 @@ const PresentationContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 252px;
+    margin: 55px 0 55px 0;
+    // margin-bottom: 252px;
 
     @media (min-width: 667px) and (max-width: 1024px) {
         display: flex;
@@ -129,7 +131,7 @@ const PresentationContent = styled.div`
 const ImgAndTitlesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
+    // margin-top: 55px;
     width: 100%;
 
     @media (min-width: 667px) and (max-width: 1024px) {
@@ -241,7 +243,7 @@ const TextileImage = styled.img`
     display: none;
 
         @media (min-width: 667px) and (max-width: 1024px) {
-            display: flex;
+            //display: flex;
             // flex-direction: row;
             // object-fit: cover;
             // align-self: center;
