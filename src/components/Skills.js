@@ -18,8 +18,11 @@ const Skills = () => {
           <li>Vue.js</li>
           <li>Redux</li>
           <li>Pinia</li>
+          <li>SCSS</li>
           <li>Styled Components</li>
           <li>Node.js</li>
+          <li>Express.js</li>
+          <li>SQL & NoSQL</li>
         </Code>
         <ToolBox>
           <li><span>Toolbox</span></li>
@@ -27,6 +30,7 @@ const Skills = () => {
           <li>Git & GitHub</li>
           <li>Vite</li>
           <li>Postman</li>
+          <li>Insomnia</li>
           <li>MongoDB</li>
           <li>Figma</li>
           <li>Photoshop</li>
