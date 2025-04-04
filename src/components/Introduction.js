@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import ProfileImg from 'images/linkedin-pic-cropped.jpg'
 // import ProfileImg from 'images/profile-pic_new.webp'
@@ -8,11 +7,8 @@ import styled from 'styled-components';
 const Introduction = () => {
   return (
     <IntroductionContainer>
-      <PresentationContainer>
-        <PresentationContent>
-          {/* <div className="picture" aria-hidden="true">
-        <img className="cover" src={} alt="portfolio cover" />
-      </div> */}
+      <AboutMeContainer>
+        <AboutMeContent>
           <ImgAndTitlesContainer>
             <ProfileImage src={ProfileImg} alt="Profile image of Frida" />
             <ImgAndTitlesContainer lang="en-US">
@@ -23,7 +19,7 @@ const Introduction = () => {
               </Titles>
             </ImgAndTitlesContainer>
           </ImgAndTitlesContainer>
-          <PresentationParagraph>
+          <AboutMeParagraph>
           Hello! I&apos;m a frontend developer with a background in the creative field, bringing a
           mix of problem-solving and design skills into building applications and websites. Creating
           has always been a big part of my life—whether through hands-on crafts, design, or now,
@@ -39,9 +35,8 @@ const Introduction = () => {
             With a broad creative background she uses her problem-solving mind and visual
             skills to craft user-friendly applications and websites. Her curiosity and drive
             to grow and learn will make her a valuable asset to any project or team. */}
-          </PresentationParagraph>
-          {/* renamed from social media container */}
-          <ContactContainer>
+          </AboutMeParagraph>
+          <LinkIconsContainer>
             <Icon hrefLang="en-US" title="Link to Frida's Linked In page" href="https://www.linkedin.com/in/fridanordenlow/" target="_blank" rel="noreferrer">
               <i aria-hidden="true" className="fab fa-linkedin-in" />
             </Icon>
@@ -54,19 +49,12 @@ const Introduction = () => {
             <Icon hrefLang="en-US" title="Link to send an email to Frida" href="mailto:frida.nordenlow@hotmail.com" target="_blank" rel="noreferrer">
               <i aria-hidden="true" className="fa-solid fa-envelope" />
             </Icon>
-          </ContactContainer>
-        </PresentationContent>
-      </PresentationContainer>
-      <TextileImage src={DuvetImg} alt="Close-up image of textile duvet art piece" />
-      {/* <QuoteContainer>
-        <QuoteText>
-        You might not think that programmers are artists, but programming is an
-        extremely creative profession. It&apos;s logic-based creativity.
-          <br />
-          <br />
-        - John Romero
-        </QuoteText>
-      </QuoteContainer> */}
+          </LinkIconsContainer>
+        </AboutMeContent>
+      </AboutMeContainer>
+      <TextileContainer>
+        <TextileImage src={DuvetImg} alt="Close-up image of textile duvet art piece" />
+      </TextileContainer>
     </IntroductionContainer>
   )
 };
@@ -78,53 +66,49 @@ const IntroductionContainer = styled.section`
 
     @media (min-width: 667px) and (max-width: 1024px) {
         display: flex;
-        flex-direction: column-reverse;
+        height: 880px; // Ändra till mindre? eller ta bort samma höjd på desktop
         margin: 0px;
     }
     @media (min-width: 1024px) {
         display: flex;
         flex-direction: row;
-        height: 980px;
         margin: 0px;
     }
 `
 
-const PresentationContainer = styled.div`
+const AboutMeContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1;
 
-    @media (min-width: 667px) and (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 81px 102px 81px 102px;
+    @media (min-width: 667px) {
+      // flex: 1;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      // margin: 81px 102px 81px 102px;
     }
-    @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
+    @media (min-width: 1200px) {
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      // width: 50%;
     }
 `
 
-const PresentationContent = styled.div`
+const AboutMeContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 55px 0 55px 0;
     // margin-bottom: 252px;
 
-    @media (min-width: 667px) and (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    @media (min-width: 667px) {
+      margin: 0 50px 0 50px;
     }
     @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 252px 50px 0px 50px;
+      max-width: 600px;
     }
 `
 
@@ -135,7 +119,7 @@ const ImgAndTitlesContainer = styled.div`
     width: 100%;
 
     @media (min-width: 667px) and (max-width: 1024px) {
-        flex-direction: row;
+        flex-direction: column;
         margin: 0px;
     }
     @media (min-width: 1024px) {
@@ -143,6 +127,7 @@ const ImgAndTitlesContainer = styled.div`
         margin: 0px;
     }
 `
+
 const ProfileImage = styled.img`
     width: 164px; 
     height: 164px;
@@ -170,7 +155,6 @@ const MyName = styled.h3`
     color: #86B8D7; // jättebäst
     // color: #8BC0E1; bäst
     // color: #90CDEB; bättre
-    // color: #9FD1EA; bra
     margin-bottom: 5px;
     // color: #E58CA1; bra mellanrosa
 `
@@ -187,7 +171,7 @@ const SecondProfession = styled.h4`
     color: #565656;
 `
 
-const PresentationParagraph = styled.p`
+const AboutMeParagraph = styled.p`
     font-family: 'EB Garamond';
     font-size: 22px;
     font-weight: 400;
@@ -205,33 +189,21 @@ const PresentationParagraph = styled.p`
     }
 
     @media (min-width: 667px) {
-        padding-left: 40px;
+        // padding-left: 40px;
     }
 `
 
-const ContactContainer = styled.div`
+const LinkIconsContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /*align-items: flex-end;*/
-    width: 240px;
+    justify-content: space-between;
+    width: 150px;
     padding: 0px;
-    margin: 40px 0px 0px 0px;
-
-    @media (min-width: 667px) and (max-width: 1024px) {
-        margin-bottom: 81px;
-        padding-left: 40px;
-    }
-    @media (min-width: 1024px) {
-        margin-top: 58px;
-        padding-left: 40px;
-    }
+    margin-top: 40px;
 `
 
 const Icon = styled.a`
-    color: #D0D0D0;
+    color:rgb(175, 175, 175);
     font-size: 26px;
-    margin-right: 34px;
 
     &:hover {
         // color: black;
@@ -239,63 +211,29 @@ const Icon = styled.a`
   }
 `
 
-const TextileImage = styled.img`
-    display: none;
+const TextileContainer = styled.div`
+  display: none;
 
-        @media (min-width: 667px) and (max-width: 1024px) {
-            //display: flex;
-            // flex-direction: row;
-            // object-fit: cover;
-            // align-self: center;
-            // width: 40%;
-        }
-        @media (min-width: 1024px) {
-            display: flex;
-            justify-content: center;
-            // width: 50%;
-        }
+  @media (min-width: 667px) {
+    display: flex;
+    width: 40%;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: center;
+  }
 `
-/*
-const QuoteContainer = styled.div`
-    display: none;
 
-    @media (min-width: 667px) and (max-width: 1024px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #FCEDEA;
-    }
-    @media (min-width: 1024px) {
-        display: flex;
-        justify-content: center;
-        background: #FCEDEA;
-        width: 50%;
-    }
-` */
-
-/* const QuoteText = styled.p`
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 22px;
-    color: #EB5577;
-    line-height: 30px;
-    width: 50%;
-
-    @media (min-width: 667px) and (max-width: 1024px) {
-        font-family: 'EB Garamond';
-        font-style: italic;
-        font-size: 22px;
-        color: #EB5577;
-        line-height: 30px;
-        width: 50%;
-    }
-    @media (min-width: 1024px) {
-        font-family: 'EB Garamond';
-        font-style: italic;
-        font-size: 24px;
-        color: #EB5577;
-        padding-top: 320px;
-        line-height: 40px;
-        width: 60%;
-    }
-` */
+const TextileImage = styled.img`
+width: 100%;
+height: 100%;
+  /* max-width: 100%;
+  height: auto; */
+  object-fit: cover;
+  display: block;
+`
