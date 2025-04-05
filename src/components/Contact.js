@@ -11,7 +11,7 @@ const Contact = () => {
         <Titles>
           <MyName>Frida Nordenlöw</MyName>
           <FirstProfession>Frontend Developer</FirstProfession>
-          <SecondProfession>+ visual artist</SecondProfession>
+          <SecondProfession>+ visual & textile artist</SecondProfession>
         </Titles>
       </ImgAndTitlesContainer>
       <ContactInfo>
@@ -42,33 +42,32 @@ const ContactWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 24px 0px 24px;
     background: #AAC5B5;
+    padding: 94px 0 94px 0;
     // background: #F3DDDF; light pink
     // background: #e5c0c3;
-
-    //@media (min-width: 667px) {
-    //    align-items: center;
-    //}
 `
 const Header = styled.div`
     // color: #EB5577;
     color: black;
-    font-weight: 900;
-    font-size: 55px;
+    /* font-weight: 900;
+    font-size: 65px; */
+    font-size: 65px;
+    font-weight: 800;
     line-height: 78px;
-    margin: 64px 0px 56px 0px;
+    margin-bottom: 65px;
 
     @media (min-width: 667px) {
         font-size: 85px;
-        margin-top: 168px;
+        margin-bottom: 80px;
+        // margin-top: 168px;
   }
 `
 
 const ImgAndTitlesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
+    // margin-top: 55px;
 
     @media (min-width: 667px) {
         flex-direction: row;
@@ -92,7 +91,7 @@ const Titles = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 113px;
+    height: 115px;
     margin-top: 34px;
 `
 
@@ -100,7 +99,6 @@ const MyName = styled.h3`
     font-size: 28px;
     font-weight: 700;
     color: black;
-    // color: #0B24F5;
 `
 
 const FirstProfession = styled.h2`
@@ -115,18 +113,24 @@ const SecondProfession = styled.h4`
 `
 
 const ContactInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // align-self: flex-start;
     color: black;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 42px;
-    margin: 56px 0px 99px 0px;
+    font-weight: 700; // 900?
+    font-size: 18px;
+    line-height: 30px;
+    margin: 56px 0px 56px 0px;
     
     @media (min-width: 667px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 32px;
+        font-size: 28px;
+        font-weight: 700;
+        // font-size: 32px;
         line-height: 43px;
         margin: 80px 0px 80px 0px;
     }
@@ -136,20 +140,12 @@ const IconsContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 340px;
-    padding: 0px;
-    margin-bottom: 80px;
-    // margin: 40px 0px 0px 0px;
-
-    @media (min-width: 667px) {
-        margin-bottom: 168px;
-    }
+    width: 150px;
 `
 
 const Icon = styled.a`
     color: black;
     font-size: 26px;
-    // margin-right: 34px;
 
     &:hover {
         color: #D0D0D0;
