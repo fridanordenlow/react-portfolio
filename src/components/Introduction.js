@@ -1,7 +1,8 @@
 import React from 'react';
 import ProfileImg from 'images/linkedin-pic-cropped.jpg'
 // import ProfileImg from 'images/profile-pic_new.webp'
-import DuvetImg from 'images/duvet-1.jpg'
+import DuvetImg from 'images/dreamer-duvet.webp'
+// import DuvetImg from 'images/duvet-1.jpg'
 import styled from 'styled-components';
 
 const Introduction = () => {
@@ -62,17 +63,16 @@ const Introduction = () => {
 export default Introduction;
 
 const IntroductionContainer = styled.section`
-    margin: 0px 24px 0px 24px;
+    margin: 0px 30px 0px 30px;
 
     @media (min-width: 667px) and (max-width: 1024px) {
         display: flex;
-        height: 880px; // Ändra till mindre? eller ta bort samma höjd på desktop
-        margin: 0px;
+        margin: 0;
     }
     @media (min-width: 1024px) {
         display: flex;
         flex-direction: row;
-        margin: 0px;
+        margin: 0;
     }
 `
 
@@ -87,12 +87,13 @@ const AboutMeContainer = styled.div`
       align-items: center;
       justify-content: center;
       width: 60%;
+      padding: 94px 24px 94px 24px;
       // margin: 81px 102px 81px 102px;
     }
     @media (min-width: 1200px) {
       flex: 1;
-      align-items: center;
-      justify-content: center;
+      /* align-items: center;
+      justify-content: center; */
       // width: 50%;
     }
 `
