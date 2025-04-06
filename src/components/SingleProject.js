@@ -8,9 +8,6 @@ import LiveDemoHover from 'icons/Live-Demo-Button-Hover.svg'
 const SingleProject = (
   { img, title, description, techLanguages, githubLink, deployedLink }
 ) => {
-  console.log(title)
-  console.log(description)
-  console.log(deployedLink)
   return (
     <ProjectWrapper lang="en-US">
       <ImageWrapper aria-hidden="true">
@@ -42,40 +39,57 @@ const SingleProject = (
 export default SingleProject;
 
 const ProjectWrapper = styled.article`
-  margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  // margin-top: 24px;
   // margin: 0px 24px 120px 0px;
 
-  @media (min-width: 667px) and (max-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  @media (min-width: 667px) {
+    // max-width: 550px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 850px) {
+    // max-width: 1100px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 20px;
+    align-items: flex-start;
     justify-content: center;
   }
 `;
 
 const ImageWrapper = styled.div`
-  margin: 0px 24px 24px 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+
+  @media (min-width: 850px) {
+    width: 45%;
+    // aspect-ratio: 1 / 1;
+  }
 `;
 
 const ProjectImage = styled.img`
     object-fit: cover;
-    // width: 184px;
-    width: 280px;
-    height: 280px;
-
-  @media (min-width: 667px) and (max-width: 1024px) {
-    object-fit: cover;
-    // width: 184px;
-    height: 280px;
-  }
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    display: block;
 `;
 
-const ProjectInfo = styled.div``;
+const ProjectInfo = styled.div`
+  @media (min-width: 850px) {
+    width: 55%;
+    // max-width: 500px;
+    // aspect-ratio: 1 / 1;
+  }
+`;
 
 const ProjectTitle = styled.h3`
     font-family: 'Satoshi';
@@ -93,27 +107,26 @@ const ProjectDescription = styled.p`
     font-size: 22px;
     line-height: 29px;
     color: #000000;
-    margin: 24px 24px 24px 0;
+    // margin: 24px 24px 24px 0;
+    margin-bottom: 1rem;
 
     @media (min-width: 667px) and (max-width: 1024px) {
-        max-width: 80%;
-        margin: 24px 0 24px 0;
+       // font-size: 24px;
+        // max-width: 80%;
+        // margin: 24px 0 24px 0;
   }
 `;
 
 const ProjectLanguages = styled.div`
     display: flex;
     flex-direction: row;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 18px;
+    margin-bottom: 1rem;
 `;
 
 const ViewCodeButton = styled.button`
     width: 200px; 
     height: 48px;
     background-image: url(${ViewCode});
-    margin-top: 24px;
     background-size: cover; 
     background-position: center; 
     background-color: white;
@@ -129,7 +142,6 @@ const LiveDemoButton = styled.button`
     width: 164px; 
     height: 48px;
     background-image: url(${LiveDemo});
-    margin-top: 24px;
     background-size: cover; 
     background-position: center;
     background-color: white;

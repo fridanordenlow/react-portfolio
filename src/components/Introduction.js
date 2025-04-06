@@ -21,7 +21,7 @@ const Introduction = () => {
             </ImgAndTitlesContainer>
           </ImgAndTitlesContainer>
           <AboutMeParagraph>
-          Hello! I&apos;m a frontend developer with a background in the creative field, bringing a
+          Hello! I&apos;m a Frontend Developer with a background in the creative field, bringing a
           mix of problem-solving and design skills into building applications and websites. Creating
           has always been a big part of my life—whether through hands-on crafts, design, or now,
           coding. My journey into web development started with Technigo&apos;s bootcamp in 2023, and
@@ -30,7 +30,7 @@ const Introduction = () => {
               href="https://medieinstitutet.se/utbildningar/front-end-developer/?_gl=1*15fasuc*_up*MQ..*_ga*MjI3Nzk5MzA3LjE3NDIyMTYyMDA.*_ga_Z1PFJ3S4H8*MTc0MjIxNjE5OS4xLjAuMTc0MjIxNjE5OS4wLjAuMTA5ODQ1NjkzMQ..*_ga_1GR3EKMT4F*MTc0MjIxNjE5OS4xLjAuMTc0MjIxNjE5OS4wLjAuMA.."
               target="_blank"
               rel="noopener noreferrer">
-              Front End Developer
+              Frontend Developer
             </a> at Medieinstitutet in Stockholm.
             {/* Frida is a new frontend developer with great excitement for a future within tech.
             With a broad creative background she uses her problem-solving mind and visual
@@ -180,17 +180,15 @@ const AboutMeParagraph = styled.p`
     margin-top: 40px;
 
     a {
-        color: #86B8D7;
-        text-decoration: none;
+        // color: #86B8D7;
+        color: black;
+        font-style: italic;
+        text-decoration: underline 1px;
         // margin-left: 5px;
 
         &:hover {
             color: #E58CA1; 
         }
-    }
-
-    @media (min-width: 667px) {
-        // padding-left: 40px;
     }
 `
 

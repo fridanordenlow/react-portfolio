@@ -5,7 +5,7 @@ import SingleProject from './SingleProject.js';
 
 const FeaturedProjectsList = () => {
   return (
-    <Section lang="en-US" title="List of Frida's featured projects">
+    <FeaturedProjectsContainer lang="en-US" title="List of Frida's featured projects">
       <Header lang="en">Featured Projects</Header>
       {ProjectData.map((project) => {
         return (
@@ -21,30 +21,35 @@ const FeaturedProjectsList = () => {
             deployedLink={project.deployedLink} />
         )
       })}
-    </Section>
+    </FeaturedProjectsContainer>
   )
 };
 
 export default FeaturedProjectsList;
 
-export const Section = styled.section`
-  margin: 60px 24px 60px 24px;
+export const FeaturedProjectsContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin: 60px 30px 60px 30px;
+  gap: 40px;
+  max-width: 600px;
+  margin: 0 auto;
 
   @media (min-width: 667px) and (max-width: 1024px) {
-    padding: 0px 24px 0px 24px;
-    margin-top: 120px;
-    margin-bottom: 60px;
+    padding: 0 24px 0 24px;
+    max-width: 1200px;
+    /* margin-top: 120px;
+    margin-bottom: 60px; */
+    margin: 60px 30px 60px 30px;
   }
 
   @media (min-width: 1024px) {
-    width: 820px;
-    margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
+    // width: 820px;
+    max-width: 1200px;
+    margin: 60px 30px 60px 30px;
+    // margin: 0 auto;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
@@ -55,9 +60,11 @@ export const Header = styled.h2`
   font-size: 72px;
   line-height: 80px;
   color: #a2bfb1;
+  align-self: flex-start;
   // color: #EDB6BB;
   // color: #0B24F5;
-  margin: 24px 24px 24px 0;
+  // margin: 24px 24px 24px 0;
+  // margin-bottom: 40px;
 `;
 
 export const TechLanguages = styled.li`
@@ -72,4 +79,8 @@ export const TechLanguages = styled.li`
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+
+  /* @media (min-width: 667px) {
+    font-size: 18px;
+  } */
 `;
