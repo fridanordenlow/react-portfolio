@@ -30,26 +30,23 @@ export default FeaturedProjectsList;
 export const FeaturedProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 60px 30px 60px 30px;
+  padding: 60px 30px;
   gap: 40px;
   max-width: 600px;
   margin: 0 auto;
 
-  @media (min-width: 667px) and (max-width: 1024px) {
-    padding: 0 24px 0 24px;
-    max-width: 1200px;
-    /* margin-top: 120px;
-    margin-bottom: 60px; */
-    margin: 60px 30px 60px 30px;
+  @media (min-width: 850px) and (max-width: 1024px) {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
   }
 
   @media (min-width: 1024px) {
-    // width: 820px;
-    max-width: 1200px;
-    margin: 60px 30px 60px 30px;
-    // margin: 0 auto;
-    justify-content: center;
+    padding: 94px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
     align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -57,14 +54,17 @@ export const Header = styled.h2`
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 60px;
   line-height: 80px;
   color: #a2bfb1;
-  align-self: flex-start;
-  // color: #EDB6BB;
-  // color: #0B24F5;
-  // margin: 24px 24px 24px 0;
-  // margin-bottom: 40px;
+  align-self: center;
+
+  @media (min-width: 1024px) {
+   font-size: 72px;
+   padding-bottom: 20px;
+   // align-self: flex-start;
+  }
+
 `;
 
 export const TechLanguages = styled.li`
@@ -78,9 +78,4 @@ export const TechLanguages = styled.li`
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
-
-  /* @media (min-width: 667px) {
-    font-size: 18px;
-  } */
 `;

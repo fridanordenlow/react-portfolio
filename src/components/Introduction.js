@@ -83,18 +83,13 @@ const AboutMeContainer = styled.div`
     flex: 1;
 
     @media (min-width: 667px) {
-      // flex: 1;
       align-items: center;
       justify-content: center;
       width: 60%;
       padding: 94px 24px 94px 24px;
-      // margin: 81px 102px 81px 102px;
     }
     @media (min-width: 1200px) {
       flex: 1;
-      /* align-items: center;
-      justify-content: center; */
-      // width: 50%;
     }
 `
 
@@ -103,7 +98,6 @@ const AboutMeContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 55px 0 55px 0;
-    // margin-bottom: 252px;
 
     @media (min-width: 667px) {
       margin: 0 50px 0 50px;
@@ -184,7 +178,6 @@ const AboutMeParagraph = styled.p`
         color: black;
         font-style: italic;
         text-decoration: underline 1px;
-        // margin-left: 5px;
 
         &:hover {
             color: #E58CA1; 
@@ -205,15 +198,14 @@ const Icon = styled.a`
     font-size: 26px;
 
     &:hover {
-        // color: black;
         color: #E58CA1;
-  }
+    }
 `
 
 const TextileContainer = styled.div`
   display: none;
 
-  @media (min-width: 667px) {
+  @media (min-width: 850px) {
     display: flex;
     width: 40%;
     align-items: stretch;
@@ -229,10 +221,8 @@ const TextileContainer = styled.div`
 `
 
 const TextileImage = styled.img`
-width: 100%;
-height: 100%;
-  /* max-width: 100%;
-  height: auto; */
-  object-fit: cover;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `

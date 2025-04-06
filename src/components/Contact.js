@@ -17,6 +17,7 @@ const Contact = () => {
       <ContactInfo>
         <p>+46(0) 735 76 64 12</p>
         <p>frida.nordenlow@medieinstitutet.se</p>
+        <p>Stockholm, Sweden</p>
       </ContactInfo>
       <IconsContainer>
         <Icon hrefLang="en-US" title="Link to Frida's Linked In page" href="https://www.linkedin.com/in/fridanordenlow/" target="_blank" rel="noreferrer">
@@ -43,35 +44,29 @@ const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     background: #AAC5B5;
-    padding: 94px 0 94px 0;
+    padding: 94px 0;
     // background: #F3DDDF; light pink
     // background: #e5c0c3;
 `
 const Header = styled.div`
-    // color: #EB5577;
     color: black;
-    /* font-weight: 900;
-    font-size: 65px; */
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 78px;
     margin-bottom: 65px;
 
     @media (min-width: 667px) {
-        font-size: 85px;
+        font-size: 72px;
         margin-bottom: 80px;
-        // margin-top: 168px;
   }
 `
 
 const ImgAndTitlesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    // margin-top: 55px;
 
     @media (min-width: 667px) {
         flex-direction: row;
-       // margin-top: 75px;
     }
 `
 const ProfileImage = styled.img`

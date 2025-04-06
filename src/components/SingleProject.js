@@ -44,17 +44,8 @@ const ProjectWrapper = styled.article`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-  // margin-top: 24px;
-  // margin: 0px 24px 120px 0px;
 
-  @media (min-width: 667px) {
-    // max-width: 550px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-  }
   @media (min-width: 850px) {
-    // max-width: 1100px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -70,8 +61,7 @@ const ImageWrapper = styled.div`
   overflow: hidden;
 
   @media (min-width: 850px) {
-    width: 45%;
-    // aspect-ratio: 1 / 1;
+    width: 40%;
   }
 `;
 
@@ -85,9 +75,7 @@ const ProjectImage = styled.img`
 
 const ProjectInfo = styled.div`
   @media (min-width: 850px) {
-    width: 55%;
-    // max-width: 500px;
-    // aspect-ratio: 1 / 1;
+    width: 60%;
   }
 `;
 
@@ -95,37 +83,44 @@ const ProjectTitle = styled.h3`
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 43px;
     color: #000000;
+    @media (min-width: 667px) {
+       font-size: 32px;
+  }
 `;
 
 const ProjectDescription = styled.p`
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 24px;
     color: #000000;
-    // margin: 24px 24px 24px 0;
     margin-bottom: 1rem;
 
     @media (min-width: 667px) and (max-width: 1024px) {
-       // font-size: 24px;
-        // max-width: 80%;
-        // margin: 24px 0 24px 0;
-  }
+       font-size: 22px;
+       line-height: 28px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 22px;
+        line-height: 28px;
+    }
 `;
 
 const ProjectLanguages = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
     margin-bottom: 1rem;
 `;
 
 const ViewCodeButton = styled.button`
-    width: 200px; 
-    height: 48px;
+    width: 160px; 
+    height: 38px;
     background-image: url(${ViewCode});
     background-size: cover; 
     background-position: center; 
@@ -134,13 +129,17 @@ const ViewCodeButton = styled.button`
 
     &:hover {
     background-image: url(${ViewCodeHover});
-      // background: url('icons/View-Code-Button-Hover.svg');
+  }
+
+  @media (min-width: 1024px) {
+    width: 200px; 
+    height: 48px;
   }
 `
 
 const LiveDemoButton = styled.button`
-    width: 164px; 
-    height: 48px;
+    width: 130px; 
+    height: 38px;
     background-image: url(${LiveDemo});
     background-size: cover; 
     background-position: center;
@@ -151,29 +150,9 @@ const LiveDemoButton = styled.button`
     &:hover {
         background-image: url(${LiveDemoHover});
   }
+
+  @media (min-width: 1024px) {
+    width: 164px; 
+    height: 48px;
+  }
 `
-
-// const Button = styled.button`
-//   display: block;
-//   margin: 12px 0px 12px 0;
-//   background-color: #F5F5F5;
-//   border-radius: 40px;
-//   border: none;
-//   padding: 12px;
-//   font-family: 'Satoshi-Variable';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 27px;
-//   color: #333333;
-
-//   &:hover {
-//     // background-color: ${(props) => props.btnColor};
-//     color: white;
-//   }
-
-//   @media (min-width: 667px) and (max-width: 1024px) {
-//     display: inline;
-//     margin-right: 5px;
-//   }
-// `;

@@ -55,8 +55,8 @@ const Skills = () => {
 export default Skills;
 
 const SkillsContainer = styled.div`
-    // background: #FDF2E4;
     background: #D5EDF8;
+    // background: #FDF2E4;
     // background: #a2bfb1;
     display: flex;
     flex-direction: column;
@@ -64,11 +64,7 @@ const SkillsContainer = styled.div`
     justify-content: center;
     list-style: none;
     text-align: center;
-    padding: 94px 0 94px 0;
-
-    @media (min-width: 900px) {
-        
-    }
+    padding: 94px 0;
 `
 
 const Header = styled.h1`
