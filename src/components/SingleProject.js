@@ -95,18 +95,14 @@ const ProjectDescription = styled.p`
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 1rem;
 
-    @media (min-width: 667px) and (max-width: 1024px) {
+    @media (min-width: 667px) {
        font-size: 22px;
        line-height: 28px;
-    }
-    @media (min-width: 1024px) {
-        font-size: 22px;
-        line-height: 28px;
     }
 `;
 
